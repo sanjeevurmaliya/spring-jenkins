@@ -13,12 +13,12 @@ public class SpringJenkinsApplication {
 	
 	private static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	
-	@PostConstruct
+	/*@PostConstruct
 	private void init() {
 		// TODO Auto-generated method stub
        logger.info("init() : application started ");
 	}
-
+*/
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 		logger.info("main : Application executed ");
