@@ -16,12 +16,16 @@ public class SpringJenkinsApplication {
 	public void init()
 	{
 		logger.info("Logger Init : Application Started ");
+		logger.info("Logger Init : Application Started ");
+		logger.info("Logger Init : Application Started ");
 	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 		System.out.println("Spring Boot APP Started");
-		logger.info("Logger : Spring Main method executed ");
+		logger.info("Logger : Spring Main method executed 11");
+		logger.info("Logger : Spring Main method executed 22 ");
+		logger.info("Logger : Spring Main method executed 33 ");
 		System.out.println("test2");
 		
 	}

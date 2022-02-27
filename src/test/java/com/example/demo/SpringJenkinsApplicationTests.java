@@ -15,6 +15,7 @@ class SpringJenkinsApplicationTests {
 	@Test
 	void contextLoads() {
 		logger.info("Logger Test: I am in test logger tt ");
+		logger.info("Logger Test: I am in test logger second time ");
 		assertEquals(true, true);
 	}
 
