@@ -9,19 +9,21 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringJenkinsApplication {
-
 	
-	private static Logger logger = LoggerFactory.getLogger(SpringJenkinsApplication.class);
+	public static Logger  logger = LoggerFactory.getLogger(SpringJenkinsApplication.class);
 	
-	/*@PostConstruct
-	private void init() {
-		// TODO Auto-generated method stub
-       logger.info("init() : application started ");
+	@PostConstruct
+	public void init()
+	{
+		logger.info("Logger Init : Application Started ");
 	}
-*/
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
-		logger.info("main : Application executed ");
+		System.out.println("Spring Boot APP Started");
+		logger.info("Logger : Spring Main method executed ");
+		System.out.println("test2");
+		
 	}
 
 }
